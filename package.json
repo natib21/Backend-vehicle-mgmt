@@ -1,0 +1,19 @@
+{
+  "name": "car-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "vercel-build": "npm install"
+  },
+  "author": "Nathnael Zelalem",
+  "license": "ISC",
+  "description": "this is mini-project for job that use REST API using MERN stack",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4"
+  }
+}
