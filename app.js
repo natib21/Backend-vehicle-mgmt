@@ -25,7 +25,6 @@ mongoose.connect(process.env.DATABASE).then(() => {
   console.log("Monogo Db Connected Successfully !!!");
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`this server Run on Server on port :${PORT}`);
-});
+module.exports = (req, res) => {
+  app(req, res); // Pass the Express app to Vercel to handle requests
+};
